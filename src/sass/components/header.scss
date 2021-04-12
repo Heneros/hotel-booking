@@ -1,3 +1,58 @@
-h1{
-    color: $red;
+.nav__top{
+    display: flex;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        padding: 12px 0px;
+        color: black;
+    } 
+    .gift__card {
+        padding-left: 18%;
+    }
 }    
+.navbar{
+    display: flex;   
+    justify-content: space-between;
+    min-height: 120px;
+    padding: 75px 0;
+    .user__information{
+        display: flex;
+        align-items: flex-start;
+        .profile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile__picture{
+            width: 40px;
+            height: 40px;
+           border-radius: 50%;
+        }
+
+    } 
+    .form-search{
+        .search__navbar{    
+        background: #F5FAFE;
+        border-radius: 6px;
+        border: 1px none;
+        line-height: 15px;
+        padding: 14px 0px;
+        }
+        .search{
+            background-color: $red;
+            padding: 14px 47px;
+        }
+        .search:after{
+          position: absolute;
+          content: "";
+          background-image: url('../img/search.svg');
+          width: 15px;
+          height: 15px;
+        }
+    }
+  
+
+     
+    
+ 
+}
