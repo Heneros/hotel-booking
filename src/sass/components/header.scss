@@ -14,7 +14,8 @@
     display: flex;   
     justify-content: space-between;
     min-height: 120px;
-    padding: 75px 0;
+    padding-top: 75px;
+    // padding: 75px 0;
     .user__information{
         display: flex;
         align-items: flex-start;
@@ -82,8 +83,31 @@
         width: 177px;
         height: 40px;
    }
+}
 
-     
-    
+
  
+.navbar__bottom{
+    background-color: #0A223D;
+    width: 100%;
+    min-height: 70px;
+    ul{
+        list-style: none;
+        li{
+      display: inline-block;
+      padding: 33px 31px;
+      &:first-child{
+          padding-left: unset;
+      }
+      
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            text-transform: uppercase;
+        }
+      }
+    }
 }
