@@ -50,14 +50,14 @@
         }
         .user{
             padding-left: 15px;
-            &:after{
-                content: "";
-                position: absolute;
-                background-image: url('../img/sign-down.svg');
-                width: 24px;
-                height: 15px;
-                background-repeat: no-repeat;
-            }
+            // &:after{
+            //     content: "";
+            //     position: absolute;
+            //     background-image: url('../img/sign-down.svg');
+            //     width: 24px;
+            //     height: 15px;
+            //     background-repeat: no-repeat;
+            // }
         }
 
     } 
