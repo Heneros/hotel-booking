@@ -59,7 +59,37 @@
             //     background-repeat: no-repeat;
             // }
         }
-
+        .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          .dropbtn{
+              background-color: transparent;
+              cursor: pointer;
+              border: none;
+              outline: none;
+              padding-top: 8px;
+          }
+          .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px; 
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+        .dropdown-content a:hover {
+             background-color: #f1f1f1
+     }
+     .dropdown-content a {
+           color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+}
+    .dropdown:hover .dropdown-content {
+            display: block;
+          }
     } 
     .form-search{
         .search__navbar{    
@@ -110,4 +140,48 @@
         }
       }
     }
+}
+
+
+.header__information-block{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .header__information-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    &::after{
+        content: "Flash Offer";
+        width: 92px;
+        height: 36px;
+        background-color: $red;
+        border: none;
+        outline: 0;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 13px;
+        margin-top: 9px;
+        margin-left: 25px;
+        border-radius: 3px;
+        padding: 7px 10px;
+    }
+  }
+  .user__rating-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $red;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 13px 15px;
+    height: 70px;
+    margin-bottom: 1.5%;
+    .number__rating{
+        font-weight: bold;
+        font-size: 21px;
+    }
+  }
 }

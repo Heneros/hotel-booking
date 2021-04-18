@@ -29,6 +29,15 @@ gulp.task('html', function(){
     .pipe(browserSync.reload({stream: true}));
 });
 
+const cssFiles = [
+  "src/sass/*.css",
+  "src/sass/*.scss"
+];
+
+const scripts = [
+  "node_modules/jquery/dist/jquery.min.js",
+  "src/js/*.js"
+];
 
 
 gulp.task('images', function(){
@@ -55,7 +64,7 @@ gulp.task('allimg', function(){
 
 
 gulp.task('sass', function () {
-return gulp.src('src/sass/*.scss')
+return gulp.src(cssFiles)
     .pipe(plumber())
     .pipe(sass())
     .pipe(cssmin())
@@ -74,7 +83,7 @@ return gulp.src('src/sass/*.scss')
 });
 
 gulp.task('js', function(){
-return gulp.src('src/js/*.js') 
+return gulp.src(scripts) 
 .pipe(uglify()) 
 .pipe(concat(('script.js')))
 .pipe(gulp.dest('build/js'))
@@ -85,8 +94,8 @@ return gulp.src('src/js/*.js')
 
 gulp.task('watch', function(){
     gulp.watch('src/*.html', gulp.series('html')),
-    gulp.watch('src/sass/*.scss', gulp.series("sass"), browserSync.reload),
-    gulp.watch('src/js/*.js', gulp.series('js')),  
+    gulp.watch(cssFiles, gulp.series("sass"), browserSync.reload),
+    gulp.watch(scripts, gulp.series('js')),  
     gulp.watch("src/img/**/*.{png,jpg}", gulp.series("images"))
     gulp.watch("src/img/**/*.{png,jpg,svg}", gulp.series("allimg"))
   });
