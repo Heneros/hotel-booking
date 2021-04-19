@@ -26,6 +26,7 @@
     "imagemin-pngquant": "^9.0.2",
     "jquery": "^3.6.0",
     "node-sass": "^5.0.0",
+    "slick-slider": "^1.8.2",
     "webpack": "^5.30.0"
   }
 }
