@@ -1,7 +1,80 @@
 .banner-section__information{
-    // display: flex;
-    // justify-content: space-between;
-    .banner-slider .slick-initialized .slick-slider{
-        max-width: 728px;  
+    display: flex;
+    justify-content: space-between;
+    .banner-slider{
+       max-width: 728px;  
       }
+      .banner-section__slider-btn{
+        position: absolute;
+        top: 50%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        z-index: 5;
+        cursor: pointer;
+      }
+      .banner-section__slider-btnprev{
+       left: 20px;
+      }
+      .banner-section__slider-btnnext{
+      right: 20px;
+      }
+      // .banner__img, img{
+      //   max-width: 720px;
+      //   max-height: 458px;
+      //   outline: none;
+      // }
+      .slick-slide {
+        img{
+          width: 720px;
+          height: 458px;
+        }
+      }
+      .booking{
+        background-color: #0A223D;
+        color: #fff;
+        width: 350px;
+        height: 266px;
+        border-radius: 10px;
+        display: flex;
+        .left__information{
+          padding-left: 20px;
+          .price__text{
+            font-size: 17px;
+            line-height: 16px;
+            padding-top: 15px;
+          }
+          .price__text-second{
+            font-size: 17px;
+            line-height: 16px;
+          }
+          .price__num{
+            font-size: 27px;
+            font-weight: bold;
+          }
+          .price__text-third{
+            font-weight: 400;
+            font-size: 23px;
+          }
+        }
+        .right__information{
+          // display: flex;
+          // flex-direction: column;
+          padding-left: 21%;
+          padding-top: 15px;
+
+          .booking__description{
+
+          }
+        }
+     
+
+
+      }
+
+
+
 }
+
