@@ -145,10 +145,11 @@
 }
 
 
-.header__information-block{
+.header__information{
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-left: 25px;
   .header__information-title{
     font-weight: bold;
     font-size: 24px;

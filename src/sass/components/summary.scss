@@ -1,13 +1,70 @@
 .summary{
-  margin-top: 95px; 
+//   margin-top: 95px; 
   position: relative;
-    .summary__inner{
-
-        h1{
+        .title__summery{
             font-size: 24px;
             line-height: 30px;
             text-transform: uppercase;
             color: #333333; 
+            font-weight: 600;
         }
-    }
+        .container__inner{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .left__block{
+                flex-basis: 46%;
+                h2{
+                    padding: 25px 25px;
+                    color: #fff;
+                    font-weight: 500;
+                    background-color: #0A223D;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 10px;
+                }
+                ul{
+                    list-style-image: url('../img/circle.svg');
+                    flex-wrap: wrap;
+                    display: flex;
+                    li{
+                        padding-bottom: 15px;
+                        flex-basis: 49%;
+                    }
+                }
+              
+            } 
+            .right__block{
+             flex-basis: 46%;
+             position: r;
+             h2{
+                padding: 25px 25px;
+                color: #fff;
+                font-weight: 500;
+                background-color: #0A223D;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            ul{
+                list-style-image: url('../img/circle.svg');
+                flex-wrap: wrap;
+                display: flex;
+                li{
+                    padding-bottom: 15px;
+                    flex-basis: 49%;
+                }
+            }
+            p{
+                font-style: italic;
+                font-size: 12px;
+                line-height: 15px;
+                color: #333333;
+            }
+            span{
+                position: absolute;
+                right: 0;
+                bottom: 109px;
+            }
+       }
+   }
 }

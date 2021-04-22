@@ -1,32 +1,20 @@
 .cards{
-    margin: 35px 0;
+    margin: 55px 0;
     ul{
         display: flex;
         justify-content: space-between;
         list-style: none;
-   
-        margin-bottom: 0;
-          padding-left: 0;
-          margin-top: 0;
-
         a{
             font-weight: bold;
             font-size: 15px;
             line-height: 14px;
             text-decoration: none;  
-            padding-bottom: 0;
-            flex-grow: 1;
-            flex-basis: 0;
-            padding: 14px 10px 21px;
-
+            padding: 14px 10px 25px;
             &:hover{
                 color: $red;
                 border-bottom: 5px solid $red; 
-                // transition: .2s all;
-                padding-bottom: 15px;
-
+                padding-bottom: 20px;
             }
-
         }
     }
 }
