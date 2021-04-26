@@ -1,0 +1,26 @@
+.other__offers{
+    margin: 50px 0;
+    h1{
+        text-transform: uppercase;
+        color: $brown;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .container__offers{
+        display: flex;
+        .block__offer{
+            height: 500px;
+            padding: 0 30px;
+        }
+        .blue__haven{
+            background-color: red;
+            flex-basis: 55%;  
+        }
+        .lux__belle{
+            background-color: red;
+            flex-basis: 40%;
+        }
+    }
+
+}  
