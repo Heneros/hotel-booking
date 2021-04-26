@@ -2,7 +2,7 @@
     $(".rate-yo").rateYo({
         ratedFill: "#F2994A",
         rating: 4,
-        starWidth: "20px",
+        starWidth: "17px",
         normalFill: "#c4c4c4"
     });
 

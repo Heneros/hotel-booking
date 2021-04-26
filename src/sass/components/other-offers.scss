@@ -1,5 +1,5 @@
 .other__offers{
-    margin: 50px 0;
+    // margin: 50px 0;
     h1{
         text-transform: uppercase;
         color: $brown;
@@ -9,17 +9,42 @@
     }
     .container__offers{
         display: flex;
+        justify-content: space-between;
         .block__offer{
             height: 500px;
-            padding: 0 30px;
+            border-radius: 5px;
+            background-color: $blue;
         }
         .blue__haven{
-            background-color: red;
-            flex-basis: 55%;  
+            flex-basis: 65%;
+            margin-right: 25px;
+            position: relative;
+            img{
+                right: 4px;
+                position: relative;
+            }
+                .small__rating{
+                    padding: 35px 45px;
+                    position: absolute;
+                    top: 0;
+                }
+                h3{
+                    padding: 50px 119px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #fff;
+                }
+                p{
+                    padding: 50px 130px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #fff;
+                }
         }
         .lux__belle{
-            background-color: red;
-            flex-basis: 40%;
+            flex-basis: 35%;
         }
     }
 
