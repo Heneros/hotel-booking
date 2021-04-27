@@ -11,37 +11,93 @@
         display: flex;
         justify-content: space-between;
         .block__offer{
-            height: 500px;
+            height: 560px;
             border-radius: 5px;
             background-color: $blue;
+            position: relative;
+
         }
         .blue__haven{
+            display: flex;
             flex-basis: 65%;
             margin-right: 25px;
-            position: relative;
+            color: #fff;
+            .text{
+               display: flex;
+               flex-direction: column;
+               padding: 40px 30px 0 40px;
+            }
             img{
+                position: relative;
                 right: 4px;
+            }
+            span{
+                line-height: 15px;
+                // padding-top: 14px;
+                padding: 7px 3px 5px 40px;
+                white-space: nowrap;
                 position: relative;
             }
-                .small__rating{
-                    padding: 35px 45px;
+            .place{
+                &::before{
+                    content: "";
+                    background: url('../img/map.svg') no-repeat;
                     position: absolute;
-                    top: 0;
-                }
-                h3{
-                    padding: 50px 119px;
+                    left: 0;
+                    width: 18px;
+                    height: 15px;
+                } 
+            }
+            .guests{
+                &::before{
+                    content: "";
+                    background: url('../img/user.svg') no-repeat;
                     position: absolute;
-                    top: 0;
-                    right: 0;
-                    color: #fff;
-                }
-                p{
-                    padding: 50px 130px;
+                    left: 0;
+                    width: 18px;
+                    height: 15px;
+                }  
+            }
+            .room{
+                &::before{
+                    content: "";
+                    background: url('../img/home.svg') no-repeat;
                     position: absolute;
-                    top: 0;
-                    right: 0;
-                    color: #fff;
-                }
+                    left: 0;
+                    width: 18px;
+                    height: 15px;
+                } 
+            }
+            .price__old{
+                text-decoration: line-through;
+                font-size: 20px;
+            }
+            .price__new{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                position: relative;
+                bottom: 23px;
+            }
+            button{
+                font-size: 16px;
+                font-weight: bold;
+                background-color: $red;
+                color: #fff;
+                // width: 118px;
+                border: none;
+                outline: none;
+                padding: 15px 30px;
+                cursor: pointer;
+                position: absolute;
+                bottom: 21px;
+                right: 21px;
+                border-radius: 5px;
+
+            }
+
+
+
         }
         .lux__belle{
             flex-basis: 35%;
