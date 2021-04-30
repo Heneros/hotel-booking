@@ -1,7 +1,7 @@
  $(document).ready(function(){
     $(".rate-yo").rateYo({
         ratedFill: "#F2994A",
-        rating: 4,
+        rating: 5,
         starWidth: "17px",
         normalFill: "#c4c4c4"
     });
