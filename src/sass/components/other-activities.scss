@@ -1,0 +1,55 @@
+.other-activities{
+ margin: 65px 0;
+ h1{
+     text-align: left;
+     text-transform: uppercase;
+ }
+ .block__activity{
+     margin-top: 57px;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     align-items: center;
+ }
+ .activity__card{
+     flex-basis: 23%;
+     color: #fff;
+     height: 255px;
+     position: relative;  
+    //  box-shadow: 0 0 0  45px rgba(34, 60, 80, 0.69) inset;
+ }
+ .bar__card{
+     background: url('../img/bar.png') no-repeat;
+     background-size: cover;
+ }
+.text__block-activity{
+    position: absolute;
+    bottom: 0;
+    padding: 0 51px 12px 32px;  
+    button{
+        color: #fff;
+        background-color: $red;
+        padding: 11px 22px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+   h3{
+       font-weight: 600;
+   }
+}
+.gulf__card{
+    background: url('../img/gulf.png') no-repeat;
+    background-size: cover;
+}
+.hiking__card{
+    background: url('../img/hiking.png') no-repeat;
+    background-size: cover;
+ }
+ .marine__card{
+    background: url('../img/marine.png') no-repeat;
+    background-size: cover;
+ }
+
+}
