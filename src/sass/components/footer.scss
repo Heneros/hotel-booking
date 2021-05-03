@@ -53,5 +53,138 @@ footer{
             }
         }
     }
+    .footer__container-bottom{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .footer-contact__information{
+            flex-basis: 45%;
+            position: relative;
+            .title__contact-footer{
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 14px;
+                line-height: 160%;
+                color: #BDBDBD;
+                position: relative;
+            }
+            .information__form{
+                padding-top: 10px;
+            .contact__details-address{
+                padding-left: 60px;
+                
+                &:before{
+                    content: "";
+                    background: url('../img/location.svg') no-repeat;
+                    width: 20px;
+                    height: 22px;
+                    position: absolute;
+                    left: 10px;
+                    bottom: 4px;
+                }
+
+            }
+            .contact__details-phone{
+                padding-left: 60px;
+                &:before{
+                    content: "";
+                    background: url('../img/phone-call.svg') no-repeat;
+                    width: 20px;
+                    height: 22px;
+                    position: absolute;
+                    left: 10px;
+                  
+                }
+            }
+            .contact__details-email{
+                padding-left: 60px;
+                &:before{
+                    content: "";
+                    background: url('../img/email.svg') no-repeat;
+                    width: 20px;
+                    height: 22px;
+                    position: absolute;
+                    left: 10px;
+                  
+                }
+            }
+        }
+        }
+        .title__contact-form{
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: uppercase;
+        }
+
+        .name__form{
+            width: 210px;
+            height: 30px;
+            color: #BDBDBD;
+            outline: 0;
+            padding-left: 20px;
+            margin-right: 15px;
+            height: 50px;
+        }
+
+        .phone__form{
+            width: 210px;
+            height: 30px;
+            color: #BDBDBD;
+            outline: 0;
+            padding-left: 20px;
+            height: 50px;
+           
+        }
+        input{
+            margin-bottom: 15px;
+            border-radius: 9px;
+        }
+        textarea{
+            width:-webkit-fill-available;
+            color: #BDBDBD;
+            outline: 0;
+            padding-top: 20px;
+            padding-left: 20px;
+            border-radius: 15px;
+        }
+        .form__btn{
+            background-color: $red;
+            color: #fff;
+            border: none;
+            border-radius: 9px;
+            width: 160px;
+            height: 61px;
+            cursor: pointer;
+            padding-right: 22px;
+            font-weight: bold;
+            margin-top: 22px;
+        
+        }
+        form{
+            position: relative;
+        }
+        .footer__required{
+            font-size: 12px;
+            line-height: 15px;
+            color: #E0E0E0;
+            bottom: 25px;
+            right: 0;
+            position: absolute;
+
+        }
+
+
+    }
+
    
 } 
