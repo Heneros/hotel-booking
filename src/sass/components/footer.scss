@@ -182,9 +182,33 @@ footer{
             position: absolute;
 
         }
-
-
     }
+    .footer-information{
+        display: flex;
+        justify-content: center;
+        .container__footer-information{
+            flex-basis: 90%;
+            ul{
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                list-style: none;
+                // position: relative;
+           
+                li{
+                    padding: 0 15px;
+                }
+            }
+        }
+    
+        .payment-methods{
+            // position: absolute;
+            // left: 0;
+            justify-content: flex-end;
+            flex-basis: 10%;
+        }
+    }
+    
 
    
 } 
