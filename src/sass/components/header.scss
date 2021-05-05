@@ -1,12 +1,17 @@
 .nav__top{
     display: flex;
     justify-content: space-between;
-    a{
+
+    p{
         text-decoration: none;
-        padding: 12px 0px;
+        // padding: 12px 0px;
         color: black;
         
     } 
+    .questions{ 
+        // padding-top: 19px;
+    }
+
     .gift__card {
         padding-left: 18%;
     }
@@ -110,10 +115,23 @@
          }
  
     }
-    .logo{     
-        width: 177px;
-        height: 40px;
-   }
+//     .logo{     
+//         width: 177px;
+//         height: 40px;
+//    }
+.logo{
+    font-family: 'Luckiest Guy', cursive;    
+    font-weight: 600;   
+    color: #000;
+    font-size: 34px;
+    line-height: 24px;
+    text-transform: uppercase;
+    span{
+        color: $red;
+    }
+
+}
+
 }
 
 
@@ -188,4 +206,8 @@
         font-size: 21px;
     }
   }
+}
+
+@media only screen and (max-width:850px) {
+    
 }

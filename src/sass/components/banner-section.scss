@@ -1,15 +1,14 @@
 .banner-section__information{
     display: flex;
-    // justify-content: flex-end;
-    // flex-wrap: wrap;
     position: relative;
+
     .banner-slider{
        max-width: 728px;  
       // flex-basis: 50%;
+      margin-top: 25px;
       }
       .banner-section__slider-btn{
-        // position: absolute;
-        // top: 50%;
+  
         background-color: transparent;
         border: none;
         outline: none;
@@ -17,18 +16,17 @@
         padding: 0;
         z-index: 5;
         cursor: pointer;
+        position: absolute;
+        top: 50%;
       }
       .banner-section__slider-btnprev{
-       left: 20px;
+       left: 20px; 
+      //  top: 253px;
       }
       .banner-section__slider-btnnext{
       right: 20px;
+      // top: 253px;  
       }
-      // .banner__img, img{
-      //   max-width: 720px;
-      //   max-height: 458px;
-      //   outline: none;
-      // }
       .slick-slide {
         img{
           width: 720px;
