@@ -21,6 +21,7 @@
     justify-content: space-between;
     min-height: 120px;
     padding-top: 75px;
+    position: relative;
     // padding: 75px 0;
     .user__information{
         display: flex;
@@ -40,18 +41,18 @@
             padding-top: 7%;
             position: relative;
            .num__card{
-            position: absolute;
+            position: relative;
             font-weight: 500;
             font-size: 10px;
             line-height: 20px;
             width: 20px;
             height: 20px;
-            background-color: $red;
+            background-color: #EC1F46;
             border-radius: 50%;
             text-align: center;
             color: #fff;
-            bottom: 9px;
-            right: 27px;
+            bottom: 50px;
+            left: 17px;
            }
         }
         .user{
@@ -126,6 +127,7 @@
     font-size: 34px;
     line-height: 24px;
     text-transform: uppercase;
+    padding-top: 12px;
     span{
         color: $red;
     }
@@ -207,7 +209,63 @@
     }
   }
 }
+@media only screen and (max-width:999px){
+    .form-search{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        .search__navbar{
+            width: 75%;
 
-@media only screen and (max-width:850px) {
+        }
+    }
+    .navbar__element{
+        flex-basis: 50%;
+    }
     
+
 }
+
+@media only screen and (max-width:800px) {
+    .nav__top{
+        flex-direction: column;
+        .gift__card{
+        padding-left: unset;
+
+        }
+    }
+    .navbar{
+
+        .logo{
+            position: relative;
+            bottom: 70px;
+        }
+         .user__information{
+            position: relative;
+            bottom: 70px;
+            justify-content: flex-end;
+            .dropdown-content{
+                position: absolute;
+                right: 35px;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width:410px){
+    .navbar .form-search .search{
+        padding: 10px 21px;
+    }
+}
+
+
+
+@media only screen and (max-width:1170px) {
+    .navbar__element{
+        flex-basis: 30%;
+    }
+
+}
+
