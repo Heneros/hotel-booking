@@ -209,6 +209,82 @@
     }
   }
 }
+.menu__btn{
+  display: none;
+}
+  
+
+.menu-mobile__list--active{
+    transform: translateX(0%) !important;
+}
+.menu-mobile__link{
+    display: block;
+    // padding-left: 53px;
+    // padding-top: 36px;
+} 
+@media only screen and (max-width:1455px) {
+  .dropdown-content{
+        right: 0;
+  }
+}
+@media only screen and (max-width:1170px) {
+    .navbar__element{
+        flex-basis: 30%;
+    }
+    .navbar .user__information .card{
+        padding-top: unset;
+    }
+
+}
+
+@media only screen and (max-width:1140px) {
+    .menu__btn{
+        display: block!important;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+        position: relative;
+        left: 38px;
+
+        .menu__btn-line{
+            background: #000;
+            border-radius: 3px;
+            height: 3px;
+            width: 34px;
+            margin: 8px 0;
+        }
+    }
+    .breadcrumbs{
+        justify-content: flex-end;
+    }
+    // #menu__nav{
+    //     display: none;
+    // }
+
+    .navbar__bottom ul li a{
+        color: #000;
+    }
+    .menu-mobile__list{
+        width: 243px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        transform: translateX(-100%);
+        transition: all .3s ;
+        position: absolute;
+        z-index: 100;
+        background: #FFF;
+    }
+    .navbar__bottom ul li{
+        padding: 42px 64px 4px 0px;
+        
+    }
+    .navbar__bottom{
+        background-color: #F5FAFE;
+    }
+
+}
+
+
 @media only screen and (max-width:999px){
     .form-search{
         position: absolute;
@@ -225,7 +301,10 @@
         flex-basis: 50%;
     }
     
-
+    .navbar .user__information .card{
+        position: absolute;
+        bottom: 85%;
+    }
 }
 
 @media only screen and (max-width:800px) {
@@ -248,24 +327,26 @@
             justify-content: flex-end;
             .dropdown-content{
                 position: absolute;
-                right: 35px;
+                // right: 35px;
             }
         }
 
     }
 }
+
+@media only screen and (max-width:425px){
+    // .card{
+    //     display: none;
+    // }
+
+}
+
 @media only screen and (max-width:410px){
     .navbar .form-search .search{
         padding: 10px 21px;
     }
-}
-
-
-
-@media only screen and (max-width:1170px) {
-    .navbar__element{
-        flex-basis: 30%;
-    }
 
 }
+
+
 

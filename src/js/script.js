@@ -16,5 +16,7 @@
         prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="img/left.svg" alt= ""></button>',
         nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="img/right.svg" alt=""></button>',
     });
-
+    $('.menu__btn').on('click', function(){
+        $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+    });
 }); 
