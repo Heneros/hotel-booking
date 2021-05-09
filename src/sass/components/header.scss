@@ -222,6 +222,8 @@
     // padding-left: 53px;
     // padding-top: 36px;
 } 
+
+
 @media only screen and (max-width:1455px) {
   .dropdown-content{
         right: 0;
@@ -285,6 +287,7 @@
 }
 
 
+
 @media only screen and (max-width:999px){
     .form-search{
         position: absolute;
@@ -333,7 +336,17 @@
 
     }
 }
+@media only screen and(max-width: 770px){
+    .header__information .user__rating-btn{
+        display: none;
+    }
+}
 
+@media only screen and(max-width: 475px){
+    .header__information .header__information-title::after{
+    display: none;    
+    }
+}
 @media only screen and (max-width:425px){
     // .card{
     //     display: none;
