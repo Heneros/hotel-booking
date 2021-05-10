@@ -13,7 +13,7 @@
         responsive: [
         
               {
-                breakpoint: 730,
+                breakpoint: 7300,
                 settings: {
                     slidesToShow: 1,
                     dots: true,
