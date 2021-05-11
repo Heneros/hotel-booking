@@ -75,3 +75,21 @@
        }
    }
 }
+
+@media only screen and (max-width:999px){
+   .summary .container__inner{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:470px){
+    .summary .container__inner .right__block span {
+        right: 35px;
+        bottom: auto;
+    }
+    .summary .container__inner .right__block ul li{
+        flex-basis: unset;
+    }
+ }
+ 
+
