@@ -214,3 +214,15 @@
     }
 
 }  
+
+@media only screen and (max-width: 930px){
+    .other__offers .container__offers .lux__belle, .other__offers .container__offers .palace {
+    flex-basis: 46%;
+  }
+}
+@media only screen and (max-width: 750px){
+.other__offers .container__offers .lux__belle  
+.other__offers .container__offers .palace {
+    flex-basis: 60%;
+  }
+}
