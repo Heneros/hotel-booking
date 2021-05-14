@@ -53,3 +53,27 @@
  }
 
 }
+
+@media only screen and(max-width: 800px){
+    
+    .other__offers .container__offers .blue__haven .img__blue-beach{
+        background: url(../img/beach.png) no-repeat;
+        background-size: auto;
+        height: 213px;
+        right: 21px;
+        bottom: 62%;
+        position: absolute;
+        width: 400px;
+        flex-basis: unset;
+    }
+    .other__offers .container__offers .blue__haven{
+        height: 682px;
+        flex-basis: unset;
+    }
+    .other__offers .container__offers .blue__haven .text{
+
+        padding:315px 42px;
+        flex-basis: unset;
+        font-size: 15px;
+    }
+}
