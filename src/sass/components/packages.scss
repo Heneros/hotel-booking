@@ -78,8 +78,10 @@
 @media only screen and(max-width: 950px){
     .conainer__descriptions{
         flex-direction: column;
+
       }
       .conainer__description_second{
           flex-direction: column;
+          padding-left: 0;
       }
 }

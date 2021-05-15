@@ -60,7 +60,9 @@
         background: url(../img/beach.png) no-repeat;
         background-size: auto;
         height: 213px;
-        right: 21px;
+        right: 45px;
+        left: 45px;
+        margin: 0 auto;
         bottom: 62%;
         position: absolute;
         width: 400px;
@@ -72,8 +74,22 @@
     }
     .other__offers .container__offers .blue__haven .text{
 
-        padding:315px 42px;
+        padding: 285px 42px;
         flex-basis: unset;
         font-size: 15px;
     }
+    
+.other__offers .container__offers .blue__haven span {
+    padding: 5px 2px 5px 28px;
+    }
+    .other__offers .container__offers .blue__haven .price__new{
+        bottom: 67px;
+        left: 86px;
+        font-size: 21px;
+    }
+}
+
+
+@media only screen and(max-width: 450px){
+
 }
