@@ -56,10 +56,32 @@
 .adaptive__beach{
     display: none;
 }
+.prices__list-adaptive{
+    display: none;
+}
+.text__beach{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 @media only screen and(max-width: 800px){
     .img__blue-beach{
         display: none;
     }   
+    .prices__list{
+        display: none;
+        .prices{
+            display: none;
+        }
+    }
+    .prices__list-adaptive{
+        display: block;
+        margin: unset;
+        position: absolute;
+        left: 205px;
+        list-style: none;
+    }
+
     .adaptive__beach{
         display: block;
         height: 307px;
@@ -86,6 +108,12 @@
     // bottom: 31px;
  }
 }
+@media only screen and(max-width: 685px){
+    .other__offers .container__offers .lux__belle, .other__offers .container__offers .palace{
+        flex-basis: 70%;
+        margin: 0 auto;
+    }
+}
 @media only screen and(max-width: 650px){
     .prices{
         bottom: 253px!important;
@@ -101,27 +129,23 @@
             padding-right: 15px;
         }
     }
-    // .other__offers .container__offers .blue__haven .price__new{
-    //     line-height: 0px;
-    // }
+  
+
 }
 
-@media only screen and(max-width: 530px){
-    // .other__offers .container__offers .blue__haven .text{
-    //     margin: unset;
-    //     padding: unset;
-    //     position: relative;
-    //     right: 210px;
-    // }
-    // .other__offers .container__offers .blue__haven .img__blue-beach{
-    //     left: 132px;
-    //     margin: 0 auto;
-    //     bottom: 62%;
-    //     position: relative;
-    //     width: 900px;
-    //     margin: unset;
-    //     padding: unset;
-    // }
- 
 
+@media only screen and(max-width: 510px){
+    .text__beach{
+        position: relative;
+        bottom: 9%;
+    }
+    
+}
+@media only screen and(max-width: 430px){
+    .other__offers .container__offers .blue__haven button{
+        padding: 12px 14px;
+        font-size: 13px;
+        bottom: 13px;
+    }
+    
 }
