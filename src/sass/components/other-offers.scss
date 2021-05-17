@@ -85,6 +85,7 @@
             .price__old{
                 text-decoration: line-through;
                 font-size: 20px;
+                padding-bottom: 25px;
             }
             .price__new{
                 font-weight: bold;
@@ -190,6 +191,7 @@
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 30px;
+
                     position: relative;
                     bottom: 23px;
                 }
@@ -210,6 +212,11 @@
             }
 
         }
+    }
+    .prices__list{
+        list-style: none;
+        right: 36px;
+        position: relative;
     }
 
 }  

@@ -82,12 +82,29 @@
 .other__offers .container__offers .blue__haven span {
     padding: 5px 2px 5px 28px;
     }
-    .prices{
-        position: relative;
-        bottom: 45px
+ .other__offers .container__offers .blue__haven .price__new{
+    // bottom: 31px;
  }
 }
-
+@media only screen and(max-width: 650px){
+    .prices{
+        bottom: 253px!important;
+        left: 0px!important;
+        position: relative ;
+    }
+    .paragr__haven{
+        padding-top: 35px;
+    }
+    .prices__list{
+        display: inherit;
+        li{
+            padding-right: 15px;
+        }
+    }
+    // .other__offers .container__offers .blue__haven .price__new{
+    //     line-height: 0px;
+    // }
+}
 
 @media only screen and(max-width: 530px){
     // .other__offers .container__offers .blue__haven .text{
