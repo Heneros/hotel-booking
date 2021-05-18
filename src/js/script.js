@@ -29,10 +29,10 @@
         nextArrow: '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="img/right.svg" alt=""></button>',
         responsive: [
             {
-              breakpoint: 820,
+              breakpoint: 810,
               settings: {
                   dots: true,
-                  arrows: false,
+                  arrows: false, 
               }
             }
       ]

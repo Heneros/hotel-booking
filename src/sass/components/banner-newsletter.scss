@@ -51,3 +51,26 @@
         }
     }
 }
+
+@media only screen and(max-width:795px){
+    .banner-newsletter .layer .content__newsletter{
+        flex-direction: column;
+    }
+    .banner-newsletter .layer .content__newsletter .email__letter{
+        margin-bottom: 54px;
+    }
+  
+}
+
+@media only screen and(max-width:450px){
+    .banner-newsletter .layer .content__newsletter .btn__email{
+        width: 52px;
+    }
+    .banner-newsletter .layer .content__newsletter .email__letter{
+        width: 189px;
+    }
+    .text__letter span{
+        font-size: 35px !important;
+    }
+}
+

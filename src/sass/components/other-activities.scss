@@ -115,6 +115,7 @@
     }
     .other__offers .container__offers .lux__belle img, .other__offers .container__offers .palace img{
         height: 48%;
+        object-fit: cover;
     }
 }
 @media only screen and(max-width: 650px){
@@ -149,6 +150,10 @@
         padding: 12px 14px;
         font-size: 13px;
         bottom: 13px;
+    }
+    .paragr__haven{
+        margin: unset;
+        padding: 35px -1px;
     }
     
 }
