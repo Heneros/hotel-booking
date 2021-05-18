@@ -108,10 +108,13 @@
     // bottom: 31px;
  }
 }
-@media only screen and(max-width: 685px){
+@media only screen and(max-width: 740px){
     .other__offers .container__offers .lux__belle, .other__offers .container__offers .palace{
-        flex-basis: 70%;
-        margin: 0 auto;
+        flex-basis: 100%;
+        margin: 15px auto;
+    }
+    .other__offers .container__offers .lux__belle img, .other__offers .container__offers .palace img{
+        height: 48%;
     }
 }
 @media only screen and(max-width: 650px){
