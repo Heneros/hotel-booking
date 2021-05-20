@@ -155,5 +155,12 @@
         margin: unset;
         padding: 35px -1px;
     }
+
+    
+}
+@media only screen and(max-width: 810px){
+    .other-activities .text__block-activity{
+        padding: 0 25px 12px 32px;
+    }
     
 }
