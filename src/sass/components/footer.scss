@@ -209,6 +209,35 @@ footer{
         }
     }
     
-
+  
    
 } 
+
+@media only screen and(max-width: 1200px){
+    .social__media-block{
+    //     flex-direction: row;
+    // display: flex;
+    white-space: nowrap;
+    }
+}
+
+@media only screen and(max-width: 950px){
+    footer .container__footer-top .block__footer-top .social__media-block .title__footer-social{
+        white-space: nowrap;
+    }
+    .social__media-block{
+        white-space: revert;
+    }
+}
+
+
+@media only screen and(max-width: 600px){
+    footer .container__footer-top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .container__footer-top .block__footer-top{
+        padding: 25px 0px;
+    }
+}

@@ -159,8 +159,13 @@
     
 }
 @media only screen and(max-width: 810px){
-    .other-activities .text__block-activity{
-        padding: 0 25px 12px 32px;
+    // .other-activities .text__block-activity{
+    //     padding: 0 25px 12px 11px;
+    // }
+    .other-activities .block__activity{
+        display: inline;
     }
-    
+    .other-activities .text__block-activity h3{
+        font-size: 35px;
+    }
 }
