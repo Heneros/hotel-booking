@@ -219,6 +219,9 @@ footer{
     // display: flex;
     white-space: nowrap;
     }
+    footer .footer__container-bottom input{
+        width: unset;
+    }
 }
 
 @media only screen and(max-width: 950px){
@@ -231,7 +234,7 @@ footer{
 }
 
 
-@media only screen and(max-width: 600px){
+@media only screen and(max-width: 640px){
     footer .container__footer-top{
         display: flex;
         flex-direction: column;
@@ -239,5 +242,18 @@ footer{
     }
     footer .container__footer-top .block__footer-top{
         padding: 25px 0px;
+    }
+    footer .footer__container-bottom textarea{
+        width: 85%;
+    }
+    footer .footer__container-bottom .form__btn{
+        width: 130px;
+        height: 43px;
+    }
+ 
+}
+@media only screen and(max-width: 570px){
+    footer .footer-information{
+        flex-direction: column;
     }
 }
