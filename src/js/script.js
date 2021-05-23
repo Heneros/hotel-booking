@@ -18,8 +18,10 @@
                     slidesToShow: 1,
                     dots: true,
                     arrows: false,
+                    infinite: true,
                 }
-              }
+              },
+
         ]
 
     });
