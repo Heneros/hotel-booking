@@ -189,10 +189,15 @@
 }
   }
 
-  @media only screen and(max-width: 400px){
+  @media only screen and(max-width: 600px){
     .banner__img{
       max-width: 58%!important;
     margin: 0 auto;
     }
-    
+    .banner-section__information .slick-slide img{
+      object-fit: contain;
+    }
+    .banner-section__information .banner-slider{
+      // width: 600px;
+    }
   }
