@@ -38,7 +38,7 @@ const cssFiles = [
 const scripts = [
   "node_modules/jquery/dist/jquery.min.js",
   "node_modules/slick-slider/slick/slick.min.js",
-  "src/js/*.js"
+  "src/js/**/*.js"
 ];
 
 
@@ -87,7 +87,7 @@ return gulp.src(cssFiles)
 gulp.task('js', function(){
 return gulp.src(scripts) 
 .pipe(uglify()) 
-.pipe(concat(('script.js')))
+// .pipe(concat(('script.js')))
 .pipe(gulp.dest('build/js'))
 .pipe(browserSync.reload({stream: true}));
 });

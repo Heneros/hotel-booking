@@ -1,0 +1,1 @@
+import modal from"./modules/modal";alert(modal),modal();
