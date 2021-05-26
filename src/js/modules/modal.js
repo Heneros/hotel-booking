@@ -1,6 +1,5 @@
 const modal = () =>{
-  console.log(123);   
-}; 
-
+  alert('hello world');   
+};      
+ 
 export default modal;   
-// module.exports = { modal }

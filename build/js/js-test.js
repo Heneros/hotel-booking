@@ -1,1 +1,1 @@
-import modal from"./modules/modal";alert(modal),modal();
+import modal from"./modules/modal";alert(123);

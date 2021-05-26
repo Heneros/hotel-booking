@@ -1,10 +1,12 @@
 import modal from './modules/modal';
+        
 
-
-alert(modal); 
-  
-  
-// window.addEventListener('DOMContentLoaded', () =>{
-//    'use strict';
+   
+// alert(123); 
+// alert(modal); 
+     
+        
+window.addEventListener('DOMContentLoaded', () =>{
+   'use strict';
    modal();  
-// });  
+});  
