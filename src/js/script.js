@@ -1,10 +1,11 @@
+
  $(document).ready(function(){
     $(".rate-yo").rateYo({
         ratedFill: "#F2994A",
         rating: 5,
         starWidth: "17px",
         normalFill: "#c4c4c4"
-    });      
+    });        
 
     $(".banner-slider").slick({
         dots: false,

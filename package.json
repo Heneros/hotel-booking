@@ -14,7 +14,7 @@
     "browser-sync": "^2.26.14",
     "css-loader": "^5.2.6",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-cheerio": "^1.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
@@ -33,11 +33,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
-    "babel-cli": "^6.26.0",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-env": "^7.14.4",
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
-    "core-js": "^3.4.2"
+    "core-js": "^3.4.2",
+    "gulp-babel": "^8.0.0"
   }
 }

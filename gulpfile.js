@@ -8,10 +8,10 @@ const imageminJpegtran = require('imagemin-jpegtran');
 const pngquant = require('imagemin-pngquant');
 const cssmin = require('gulp-cssmin');
 const concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer'); 
-const webpack = require("webpack-stream");
+const autoprefixer = require('gulp-autoprefixer');
 // const uglify = require('gulp-uglify');
-// const babel = require('gulp-babel');
+const babel = require('gulp-babel');
+const webpack = require("webpack-stream");
 
 sass.compiler = require('node-sass');
 
@@ -37,11 +37,10 @@ const cssFiles = [
   "src/sass/*.scss"
 ];
 
-const scripts = [
+const scripts = [ 
   "node_modules/jquery/dist/jquery.min.js",
   "node_modules/slick-slider/slick/slick.min.js",
-  "src/js/script.js",
-  "src/js/jquery.rateyo.min.js"
+  "src/js/*.js"
 ];
 
 
@@ -89,31 +88,8 @@ return gulp.src(cssFiles)
 
 gulp.task('js', function(){
 return gulp.src(scripts) 
-.pipe(webpack({
-  mode: 'development',
-  output: {
-      filename: 'script.js'
-  },
-  watch: false,
-  devtool: "source-map",
-  module: {
-      rules: [
-        {
-          test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: [['@babel/preset-env', {
-                  debug: true,
-                  corejs: 3,
-                  useBuiltIns: "usage"
-              }]]
-            }
-          }
-        }
-      ]
-    }
+.pipe(babel({
+  presets: ["@babel/preset-env"]
 }))
 // .pipe(uglify()) 
 // .pipe(concat(('script.js')))
@@ -121,12 +97,45 @@ return gulp.src(scripts)
 .pipe(browserSync.reload({stream: true}));
 });
 
+
+gulp.task("build-js", () => {
+  return gulp.src("src/js/dev/*.js")
+              .pipe(webpack({
+                  mode: 'development',
+                  output: {
+                      filename: 'main.js'
+                  },
+                  watch: false,
+                  devtool: "source-map",
+                  module: {
+                      rules: [
+                        {
+                          test: /\.m?js$/,
+                          exclude: /(node_modules|bower_components)/,
+                          use: {
+                            loader: 'babel-loader',
+                            options: {
+                              presets: [['@babel/preset-env', {
+                                  debug: true,
+                                  corejs: 3,
+                                  useBuiltIns: "usage"
+                              }]]
+                            }
+                          }
+                        }
+                      ]
+                    }
+              }))
+              .pipe(gulp.dest('build/js'))
+              .pipe(browserSync.reload({stream: true}));
+});
+
 gulp.task("build-prod-js", () => {
-  return gulp.src("./src/js/js-test.js")
+  return gulp.src("src/js/dev/*.js")
               .pipe(webpack({
                   mode: 'production',
                   output: {
-                      filename: 'script-main.js'
+                      filename: 'main.js'
                   },
                   module: {
                       rules: [
@@ -146,20 +155,24 @@ gulp.task("build-prod-js", () => {
                       ]
                     }
               }))
-              .pipe(gulp.dest('build/js'))
-              .pipe(browserSync.reload({stream: true}));
+  .pipe(gulp.dest('build/js'))
+  .pipe(browserSync.reload({stream: true}));
+
 });
+
+
 
 gulp.task('watch', function(){
     gulp.watch('src/*.html', gulp.series('html')),
     gulp.watch(cssFiles, gulp.series("sass"), browserSync.reload),
     gulp.watch(scripts, gulp.series('js')),  
-    gulp.watch('src/js/js-test.js', gulp.series('build-prod-js')),  
+    gulp.watch("src/js/dev/*.js", gulp.series('build-js')),  
+    gulp.watch("src/js/dev/*.js", gulp.series('build-prod-js')),  
     gulp.watch("src/img/**/*.{png,jpg}", gulp.series("images"))
     gulp.watch("src/img/**/*.{png,jpg,svg}", gulp.series("allimg"))
   });
   
   gulp.task('default', gulp.series(
-    gulp.parallel('html', 'sass', 'js', 'build-prod-js','images', 'allimg'),
+    gulp.parallel('html','build-js', 'build-prod-js', 'sass', 'js','images', 'allimg'),
     gulp.parallel('watch', 'serve' )
   ));
