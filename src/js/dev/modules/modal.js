@@ -72,10 +72,36 @@ const modal = () => {
         }
       }, time)
     }
+    function calcScroll(){
+      let div = document.createElement('div');
 
+      div.style.width = '50px';
+      div.style.height = '50px';
+      div.style.overflow = 'scroll';
+      div.style.visibility = 'hidden';
+
+      document.body.appendChild(div);
+      
+      let scrollWidth = div.offsetWidth - div.clientLeft;
+      div.remove();
+
+      return scrollWidth;
+    }
+
+    function openByScroll(selector){
+      window.addEventListener('scroll', () =>{
+        let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+
+        if(!btnPressed &&(window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)){
+          document.querySelector(selector).click();
+        }
+      });
+    }
 
   }
-
+  bindModal();
+  showModalByTime();
+  openByScroll();
 }  
 
 export default modal;
