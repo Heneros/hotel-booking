@@ -26,10 +26,10 @@ const modal = () => {
           item.remove();
         }
 
-        window.forEach(item =>{
-          item.style.display = 'none';
-          item.classList.add('animated', 'fadeIn');
-        });
+        // window.forEach(item =>{
+        //   item.style.display = 'none';
+        //   item.classList.add('animated', 'fadeIn');
+        // });
 
         modal.style.display = 'block';
         document.body.style.overflow = "hidden";
@@ -98,10 +98,10 @@ const modal = () => {
       });
     }
 
-  }
-  bindModal();
-  showModalByTime();
-  openByScroll();
+  }   
+  bindModal('.options__booking');
+  showModalByTime('.options__booking');
+  openByScroll('.options__booking');
 }  
 
 export default modal;
