@@ -6,9 +6,9 @@ const modal = () => {
     const trigger = document.querySelectorAll(triggerSelector),
     modal = document.querySelector(modalSelector),
     close = document.querySelector(closeSelector),
-    windows = document.querySelectorAll('[data-modal]'),
+    window = document.querySelectorAll('[data-modal]'),
     
-
+    
 
     scroll = calcScroll();
 
@@ -87,21 +87,13 @@ const modal = () => {
 
       return scrollWidth;
     }
+ 
 
-    function openByScroll(selector){
-      window.addEventListener('scroll', () =>{
-        let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+  }     
+  bindModal('.options__booking', '.popup-up', '.popup-up  .popup-close',);  
+  bindModal('.book__now', '.popup-up', '.popup-up  .popup-close',);  
+  
 
-        if(!btnPressed &&(window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)){
-          document.querySelector(selector).click();
-        }
-      });
-    }
-
-  }   
-  bindModal('.options__booking');
-  showModalByTime('.options__booking');
-  openByScroll('.options__booking');
 }  
 
 export default modal;
