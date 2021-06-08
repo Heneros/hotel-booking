@@ -88,13 +88,11 @@ const modal = () => {
 
       return scrollWidth;
     }
- 
 
-    
   bindModal('.options__booking', '.popup-up', '.popup-up  .popup-close',);  
   bindModal('.book__now', '.popup-up', '.popup-up  .popup-close',);  
   showModalByTime('.popup-up', 1000);
-  
+
   
 }  
 

@@ -284,6 +284,19 @@ footer{
     border: none;
 }
 
+.pageup {
+
+  width: 26px ;
+  height: 26px;
+  position: fixed;
+  bottom: 100px;
+  right: 5%;
+  z-index: 9999;
+
+  cursor: pointer;
+  border: 1px solid red;
+  transition: 1s all;
+}
 
 @media only screen and(max-width: 1200px){
     .social__media-block{
