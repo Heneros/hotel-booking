@@ -220,6 +220,11 @@
     }
 
 }  
+@media only screen and (max-width: 1085px){
+    .other__offers .container__offers{
+        justify-content: space-evenly;
+    }
+}
 
 @media only screen and (max-width: 930px){
     .other__offers .container__offers .lux__belle, .other__offers .container__offers .palace {

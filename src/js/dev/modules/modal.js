@@ -7,9 +7,6 @@ const modal = () => {
     modal = document.querySelector(modalSelector),
     close = document.querySelector(closeSelector),
     window = document.querySelectorAll('[data-modal]'),
-    
-    
-
     scroll = calcScroll();
 
 
@@ -47,20 +44,23 @@ const modal = () => {
     });
     modal.addEventListener('click', (e) =>{
       if(e.target === modal){
+
         window.forEach(item =>{
           item.style.display = 'none';
         })
+
         modal.style.display = "none";
         document.body.style.overflow = "";
         document.body.style.marginRight = "0px";
       }
     });
+  }  
     function showModalByTime(selector, time){
       setTimeout(function(){ 
         let display;
 
         document.querySelectorAll('[data-modal]').forEach(item => {
-          if(getComputedStyle(item).display !== 'non'){
+          if(getComputedStyle(item).display !== 'none'){
             display = "block";
           }
         });
@@ -68,10 +68,11 @@ const modal = () => {
           document.querySelector(selector).style.display = 'block';
           document.body.style.overflow = "hidden";
           let scroll = calcScroll();
-          document.body.style.marginRight = `${scroll}px`
+          document.body.style.marginRight = `${scroll}px`;
         }
       }, time)
     }
+
     function calcScroll(){
       let div = document.createElement('div');
 
@@ -89,11 +90,12 @@ const modal = () => {
     }
  
 
-  }     
+    
   bindModal('.options__booking', '.popup-up', '.popup-up  .popup-close',);  
   bindModal('.book__now', '.popup-up', '.popup-up  .popup-close',);  
+  showModalByTime('.popup-up', 1000);
   
-
+  
 }  
 
 export default modal;
