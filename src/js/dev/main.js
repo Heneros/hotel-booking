@@ -5,8 +5,8 @@ import scrolling from './modules/scrolling';
                          
 window.addEventListener('DOMContentLoaded', () =>{
       'use strict'; 
-      modal();  
-      scrolling('.pageup');
+      modal();    
+      scrolling('.pageup', '.menu-mobile__link');
 });              
 
  

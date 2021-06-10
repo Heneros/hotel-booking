@@ -292,12 +292,15 @@ footer{
   bottom: 100px;
   right: 5%;
   z-index: 9999;
-
   cursor: pointer;
   border: 1px solid red;
   transition: 1s all;
 }
 
+.textarea__popup{
+    border: 1px solid #0A223D;
+    border-radius: 10px;
+}
 @media only screen and(max-width: 1200px){
     .social__media-block{
     //     flex-direction: row;

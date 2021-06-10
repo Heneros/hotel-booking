@@ -74,26 +74,19 @@
         <ul class="menu-mobile__list" id="menu__nav">
             <li 
              class="menu-mobile__item"
-            ><a class="menu-mobile__link"
-             ref="#!">All Deals</a></li>
+            ><a class="menu-mobile__link" href="#hotels">Hotels</a></li>
             <li 
              class="menu-mobile__item"
-            ><a class="menu-mobile__link" ref="#!">Hotels</a></li>
+            ><a href="#reviews">Reviews</a></li>
             <li 
              class="menu-mobile__item"
-            ><a ref="#!">Activities</a></li>
+            ><a class="menu-mobile__link" href="#subscribe-us">Subscribe Us</a></li>
             <li 
              class="menu-mobile__item"
-            ><a class="menu-mobile__link" ref="#!">Hotel Day Packages</a></li>
+            ><a class="menu-mobile__link" href="#activities">Activities</a></li>
             <li 
              class="menu-mobile__item"
-            ><a class="menu-mobile__link" ref="#!">Restaurants</a></li>
-            <li 
-             class="menu-mobile__item"
-            ><a class="menu-mobile__link" ref="#!">Events</a></li>
-            <li 
-             class="menu-mobile__item"
-            ><a class="menu-mobile__link" ref="#!">Rodrigues</a></li>
+            ><a class="menu-mobile__link" href="#contact-us">Contact Us</a></li>
         </ul>
     </div>
     </div>
@@ -305,7 +298,7 @@
     </section>
 </div>
 <div class="container">
-    <section class="other__offers">
+    <section id="hotels" class="other__offers">
         <h1>Other Packages</h1>
         <div class="container__offers">
             <div class="block__offer blue__haven">
@@ -397,7 +390,7 @@
     </section>
 </div>
 <div class="container">
-    <section class="guests__block">
+    <section class="guests__block" id="reviews">
         <h1>What people thinks about us</h1>
         <div class="slider-guests">
             <div class="slider__item">
@@ -438,7 +431,7 @@
 </div>        
 
 
-    <div class="banner-newsletter">
+    <div class="banner-newsletter" id="subscribe-us">
         <div class="layer">
             <div class="container">
                 <div class="content__newsletter">
@@ -457,7 +450,7 @@
         </div>
     </div>
 
-    <section class="other-activities">
+    <section class="other-activities" id="activities">
          <div class="container">
              <h1>Other Activities</h1>
              <div class="block__activity">
@@ -606,7 +599,7 @@
                          </p>
                         </div>
                      </div>
-    <div class="footer-contact__information">
+    <div id="contact-us" class="footer-contact__information">
         <h2 class="title__contact-form">
             Send us a message
         </h2>
@@ -661,7 +654,7 @@
 							<input type="text" name=name placeholder="Your Name" required>
 							<input type=text name=phone placeholder="Your Phone number" required>
 							<input type=text name=email placeholder="Your email">
-							<textarea name=message placeholder="Your comment" rows=2></textarea>
+							<textarea class="textarea__popup" name="message" placeholder="Your comment" rows=2></textarea>
 							<button class="button button-order">Send</button>
 						</div>
 					</div>
