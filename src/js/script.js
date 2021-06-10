@@ -5,8 +5,13 @@
         rating: 5,
         starWidth: "17px",
         normalFill: "#c4c4c4"
-    });        
-
+    });   
+    $("ul a").on("click", function (e) {
+        e.preventDefault();
+        const href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(href).offset().top }, 800);
+      });     
+ 
     $(".banner-slider").slick({
         dots: false,
         prevArrow: '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="img/arrow-left.svg" alt= ""></button>',

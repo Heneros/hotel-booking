@@ -295,12 +295,16 @@ footer{
   cursor: pointer;
   border: 1px solid red;
   transition: 1s all;
-}
+}  
 
 .textarea__popup{
     border: 1px solid #0A223D;
     border-radius: 10px;
+    padding: 1.5rem 1.6rem;
 }
+button .button-order{
+  cursor: pointer;
+}   
 @media only screen and(max-width: 1200px){
     .social__media-block{
     //     flex-direction: row;
