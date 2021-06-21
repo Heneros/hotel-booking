@@ -1,6 +1,6 @@
 .nav__top{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     p{
         text-decoration: none;
@@ -16,9 +16,10 @@
         padding-left: 18%;
     }
 }    
+
 .navbar{
     display: flex;   
-    justify-content: space-between;
+    justify-content: space-evenly;
     min-height: 120px;
     padding-top: 75px;
     position: relative;
