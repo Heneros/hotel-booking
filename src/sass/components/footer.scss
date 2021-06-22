@@ -9,7 +9,6 @@ footer{
             flex-basis: 24%;  
             padding: 95px 0;
             .text__content-footer{
-            
                 span{    
                     font-family: 'Luckiest Guy', cursive;             
                     color: #fff;
@@ -22,10 +21,7 @@ footer{
                 .red__title{
                     color: $red;
                 }
-                
             }
-
-   
             .title__footer-top{
                 text-transform: uppercase;
                 color: #fff;
@@ -137,7 +133,7 @@ footer{
         }
 
         .phone__form{
-            width: 210px;
+            width: 46%;
             height: 30px;
             color: #BDBDBD;
             outline: 0;

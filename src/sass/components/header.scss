@@ -195,8 +195,7 @@
   }
   .user__rating-btn{
     position: absolute;
-    // right: 0;
-    right: 130px;
+    right: 96px;
     bottom: 0;
     background-color: $red;
     color: #fff;
@@ -205,7 +204,6 @@
     padding: 13px 15px;
     height: 70px;
     margin-bottom: 1.5%;
-    margin-right: 26px;
     .number__rating{
         font-weight: bold;
         font-size: 21px;
