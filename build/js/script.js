@@ -1,6 +1,12 @@
 "use strict";
 
 $(document).ready(function () {
+  $(".rate-yo-navbar").rateYo({
+    ratedFill: "#F2994A",
+    rating: 5,
+    starWidth: "17px",
+    normalFill: "#c4c4c4"
+  });
   $(".rate-yo").rateYo({
     ratedFill: "#F2994A",
     rating: 5,

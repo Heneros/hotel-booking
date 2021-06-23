@@ -1,11 +1,17 @@
 
  $(document).ready(function(){
-    $(".rate-yo").rateYo({
+    $(".rate-yo-navbar").rateYo({
         ratedFill: "#F2994A",
         rating: 5,
         starWidth: "17px",
         normalFill: "#c4c4c4"
-    });   
+    });     
+    $(".rate-yo").rateYo({
+      ratedFill: "#F2994A",
+      rating: 5, 
+      starWidth: "17px",
+      normalFill: "#c4c4c4"
+  });   
     $("ul a").on("click", function (e) {
         e.preventDefault();
         const href = $(this).attr("href");

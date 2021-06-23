@@ -181,7 +181,10 @@
             font-size: 14px;
             line-height: 18px;
             text-transform: uppercase;
-            
+            transition: all.5s ;
+            &:hover{
+                color: red;
+            }
         }
       }
     }
@@ -364,7 +367,7 @@
     }
 }
 
-@media only screen and(max-width: 475px){
+@media only screen and(max-width: 495px){
     .header__information .header__information-title::after{
     display: none;    
     }
