@@ -344,6 +344,15 @@ button .button-order{
     footer .footer-information{
         flex-direction: column;
     }
+    footer .footer__container-bottom .name__form{
+     width: 85%;
+    }
+    footer .footer__container-bottom .phone__form{
+        width: 84%;
+    }
+    footer .footer__container-bottom .footer-contact__information{
+        flex-basis: 100%;
+    }
 }
 
 

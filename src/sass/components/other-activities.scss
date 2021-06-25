@@ -16,6 +16,10 @@
      color: #fff;
      height: 255px;
      position: relative;  
+     transition: all .5s ;
+     &:hover{
+        transform: scale(1.15);
+     }
     //  box-shadow: 0 0 0  45px rgba(34, 60, 80, 0.69) inset;
  }
  .bar__card{
