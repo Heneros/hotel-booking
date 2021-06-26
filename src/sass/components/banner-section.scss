@@ -228,3 +228,13 @@ display: unset !important;
     // object-fit: cover;
     // min-height: 400px;
   }
+
+  @media only screen and(max-width: 450px){
+.banner-section__information .container__banner-section .booking{
+  width: 325px;
+  margin-bottom: 15px;
+}
+.banner-section__information .container__banner-section .booking .right__information{
+  padding-left: 4%;
+}
+  }
